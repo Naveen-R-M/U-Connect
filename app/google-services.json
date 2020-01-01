@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "711436902552",
+    "firebase_url": "https://base-tech-a4033.firebaseio.com",
+    "project_id": "base-tech-a4033",
+    "storage_bucket": "base-tech-a4033.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711436902552:android:ff24e97a4bdc74af",
+        "android_client_info": {
+          "package_name": "com.example.u_connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "711436902552-t4mjgt378vv9nlr03k71l3dpqma3e83n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.u_connect",
+            "certificate_hash": "0f0ee515abd9a49dadede853aaef925d47a92143"
+          }
+        },
+        {
+          "client_id": "711436902552-3mne25lu2ltjlc7v0h6q2o7dlpegnrpm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF7eDCB8Q6sFalfUALk9vcZKYrlbkubgc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "711436902552-3mne25lu2ltjlc7v0h6q2o7dlpegnrpm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

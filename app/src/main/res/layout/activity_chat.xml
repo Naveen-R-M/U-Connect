@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    >
+
+    <include layout="@layout/toolbar_layout"
+        android:id="@+id/tb1"
+        />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb1"
+        android:layout_above="@+id/linear1"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            >
+
+            <!--<TextView-->
+                <!--android:id="@+id/t1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:padding="10dp"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textSize="20sp"-->
+                <!--android:text="Hello"-->
+                <!--android:layout_marginStart="2dp"-->
+                <!--android:layout_marginEnd="2dp"-->
+                <!--android:layout_marginBottom="35dp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--/>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/t1"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="2.5dp"
+                android:textColor="@android:color/black"
+                android:padding="8dp"
+                android:gravity="right"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/recycler_view"-->
+        <!--android:layout_below="@+id/tb1"-->
+        <!--android:layout_above="@+id/linear1"-->
+        <!--&gt;-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/t1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+    <!--</android.support.v7.widget.RecyclerView>-->
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+
+        >
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/met1"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:hint="Type here..."
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+
+            />
+
+        <ImageButton
+            android:id="@+id/img1"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_send"
+
+            />
+
+    </LinearLayout>
+
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/tb1"-->
+        <!--android:background="?attr/colorError"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--android:theme="?attr/actionBarTheme"-->
+        <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+        <!--android:layout_width="match_parent"-->
+        <!--app:titleTextColor="#2E1546"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+
+
+
+</RelativeLayout>
+

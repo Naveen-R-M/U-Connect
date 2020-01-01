@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/toolbar_layout"
+        android:id="@+id/tb1"/>
+
+    <ScrollView
+        android:id="@+id/scr1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="40dp">
+
+            <com.yasic.library.particletextview.View.ParticleTextView
+                android:id="@+id/pet1"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp" />
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text=" USER - REGISTRATION"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:textColor="#9B36AF"-->
+            <!--android:textSize="25dp"-->
+            <!--android:textStyle="italic" />-->
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/met1"
+                android:layout_marginTop="4dp"
+                app:met_floatingLabel="normal"
+                android:hint="USERNAME"
+                android:textColor="@android:color/white"
+                android:maxLines="1"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/met3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="E-MAIL"
+                android:textColor="@android:color/white"
+                app:met_floatingLabel="normal"
+                android:maxLines="1"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/met2"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textPassword"
+                    app:met_floatingLabel="normal"
+                    android:hint="PASSWORD"
+                    android:textColor="@android:color/white"
+                    android:maxLines="1"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/met4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="PHONE NO"
+                android:textColor="@android:color/white"
+                app:met_floatingLabel="normal"
+                android:maxLines="1"/>
+
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button"
+                android:gravity="center"
+                android:text="R E G I S T E R"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="or"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="28dp"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="Already have an account ?"
+                android:textSize="20dp"
+                android:id="@+id/t1"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

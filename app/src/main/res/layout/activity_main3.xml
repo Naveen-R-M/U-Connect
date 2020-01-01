@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb1"
+        android:background="?attr/colorError"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_width="match_parent"
+        app:titleTextColor="#2E1546"
+        app:title="CONTACTS"
+        android:layout_height="wrap_content"
+        />
+
+<SearchView
+    android:id="@+id/search_view"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginTop="15dp"
+    android:iconifiedByDefault="false">
+    <requestFocus/>
+</SearchView>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            >
+
+        </ListView>
+
+
+
+</LinearLayout>
